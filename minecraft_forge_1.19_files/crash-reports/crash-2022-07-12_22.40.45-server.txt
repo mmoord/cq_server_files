@@ -1,0 +1,71 @@
+---- Minecraft Crash Report ----
+// On the bright side, I bought you a teddy bear!
+
+Time: 7/12/22, 10:40 PM
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:627) ~[server-1.19-20220607.102129-srg.jar%2396!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServer.java:245) ~[server-1.19-20220607.102129-srg.jar%2396!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19
+	Minecraft Version ID: 1.19
+	Operating System: Linux (amd64) version 5.10.0-16-amd64
+	Java Version: 17.0.3, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 42626172088 bytes (40651 MiB) / 42949672960 bytes (40960 MiB) up to 49392123904 bytes (47104 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Xeon(R) CPU           E5640  @ 2.67GHz
+	Identifier: Intel64 Family 6 Model 44 Stepping 2
+	Microarchitecture: Westmere (Server)
+	Frequency (GHz): 2.67
+	Number of physical packages: 2
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: MGA G200eW WPCM450
+	Graphics card #0 vendor: Matrox Electronics Systems Ltd. (0x102b)
+	Graphics card #0 VRAM (MB): 8.00
+	Graphics card #0 deviceId: 0x0532
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 25109.40
+	Virtual memory used (MB): 5762.22
+	Swap memory total (MB): 976.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xmx46G -Xms40G
+	Server Running: true
+	Data Packs: vanilla, mod:forge
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.0.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19-41.0.98.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19-41.0.98.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19-41.0.98.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19-41.0.98.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19-41.0.98.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		server-1.19-20220607.102129-srg.jar               |Minecraft                     |minecraft                     |1.19                |DONE      |Manifest: NOSIGNATURE
+		forge-1.19-41.0.98-universal.jar                  |Forge                         |forge                         |41.0.98             |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+	Crash Report UUID: 4454472a-030f-407b-a1f6-923192726212
+	FML: 41.0
+	Forge: net.minecraftforge:41.0.98
